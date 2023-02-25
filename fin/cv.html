@@ -52,14 +52,11 @@
                 <img class="navbar-brand-light" src="./assets/img/dark.svg" alt="Logo dark">
             </a>
             -->
+
             <div class="navbar-collapse collapse mr-auto" id="navbar_global"> 
                 <div class="navbar-collapse-header">
                     <div class="row">
-                        <div class="col-6 collapse-brand">
-                            <a href="./index.html">
-                                <img src="./assets/img/dark.svg" alt="Logo dark">
-                            </a>
-                        </div>
+                        <div class="col-6 collapse-brand"></div>
                         <div class="col-6 collapse-close">
                             <a href="#navbar_global" class="fas fa-times" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" title="close" aria-label="Toggle navigation"></a>
                         </div>
@@ -76,8 +73,8 @@
                             CV
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#cv" class="nav-link">
+                    <li class="nav-item dropdown">
+                        <a href="projects.html" class="nav-link">
                             Projects
                         </a>
                     </li>
@@ -100,15 +97,13 @@
                     -->
                 </ul>
             </div>
-            <!--
             <div class="d-flex align-items-center">
-                <a href="https://themesberg.com/product/bootstrap/swipe-free-mobile-app-one-page-bootstrap-5-template" target="_blank" class="btn btn-outline-soft d-none d-md-inline mr-md-3 animate-up-2">Free download</a>
-                <a href="https://themesberg.com/product/ui-kit/pixel-pro-premium-bootstrap-5-ui-kit" target="_blank" class="btn btn-md btn-tertiary text-white d-none d-md-inline animate-up-2">Upgrade to Pro<i class="fas fa-rocket ml-2"></i></a>
+                <a href="contact.html" target="_blank" class="btn btn-md haha text-white d-none d-md-inline animate-up-2">Hire Me!</a>
                 <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            -->
+           
         </div>
     </nav>
 </header>
@@ -203,108 +198,29 @@
 
     <section class="experience section-padding">
         <div class="container">
-    <h3 class="experience-title">Experience</h3>
-
-    <div class="experience-wrapper">
-        <div class="company-wrapper clearfix">
-            <div class="experience-title">University of Virginia (UVA)</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-            <div class="time"><i>Charlottesville</i><br>Sep 2021 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+            <h3 class="experience-title">Experience</h3>
+            <div id="experience_container"></div>
         </div>
-
-        <div class="job-wrapper clearfix">
-            <div class="experience-title">Research Assistant</div> <!-- JOB TITLE  -->
-            <div class="company-description">
-                <p>- Worked with the psychology department to plan, design and deploy a game (Check project Hoosville
-                    for more on the technical side and source code) <br>
-                   - Led technological of development and explained technical concepts to non-technical people </p> <!-- JOB DESCRIPTION  -->
-            </div>
-        </div>
-
-        <div class="company-wrapper clearfix">
-            <div class="experience-title">Cortina Platform</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-            <div class="time"><i>New York/Remote</i><br>Jun 2022 - Sep 2022</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-        </div>
-
-        <div class="job-wrapper clearfix">
-            <div class="experience-title">Junior Solutions Architect</div> <!-- JOB TITLE  -->
-            <div class="company-description">
-                <p>- Researched and documented other systems’ APIs <br>
-                   - Diagrammed use cases for system integrations, solving business problems and facilitating future
-                   implementation
-                </p> <!-- JOB DESCRIPTION  -->
-            </div>
-        </div>
-
-    </div>
-</div>
-
         <div class="container">
-    <h3 class="experience-title">Projects</h3>
-
-    <div class="experience-wrapper">
-        <div class="company-wrapper clearfix">
-            <div class="experience-title">Hoosville</div> 
-            <div class="time">Sep 2021 - Present</div>
-        </div>
-        <div class="job-wrapper clearfix">
-            <div class="company-description">
-                <p>- Programmed an IOS and Android app for the Deparment of Psychology at UVA to research strategies people use to make friends <br>
-                   - Leveraged a combination of redux architecture along with firebase and google sheets apis to allow researchers complete control of the variables and events in the game <br>
-                   - Tools: GitHub, Firebase, Google Sheets API, React Native, Expo, JavaScript, Redux </p> <!-- JOB DESCRIPTION  -->
-            </div>
+            <h3 class="experience-title">Projects</h3>
+            <div id="projects_container"></div>
         </div>
 
-        <div class="company-wrapper clearfix">
-            <div class="experience-title">WhatsApp Analyzer & Winning Chess Openings</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-            <div class="time">2023 / 2021</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-        </div>
-        <div class="job-wrapper clearfix">
-            <div class="company-description">
-                <p>- Programmed projects using interactive plots.  <br>
-                   - Winning Chess Openings: Analyzed the frequency chess games tend to be won by each side
-                   depending on the first few moves in the game, using data from Lichess - attempting to
-                   empirically discover what openings are better. <br>
-                   -  Chat Analyzer: Allows user to see interactive charts of their own (Whatsapp) chats, exported
-                   from the app, showing number of texts and words sent as well as count of the words sent.
-                </p> <!-- JOB DESCRIPTION  -->
-            </div>
-        </div>
-        <div class="company-wrapper clearfix">
-            <div class="experience-title">Gate Dilemma and Libertadores
-            </div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-            <div class="time">2021 / 2019</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-        </div>
-        <div class="job-wrapper clearfix">
-            <div class="company-description">
-                <p>-  Developed projects demonstrating knowledge of Python, as well as Pygame and Gamebox libraries. 2021/2019
-                    More importantly, the code is clean and well documented.  <br>
-                   -  Gate Dilemma: Developed and documented a game where players are presented with inputs and an output
-                   and must choose a logical gate that will make the statement correct. <br>
-                   -  Chat Analyzer: Allows user to see interactive charts of their own (Whatsapp) chats, exported
-                   from the app, showing number of texts and words sent as well as count of the words sent. <br>
-                   - Libertadores: Created and documented a game where there’s a constant flow of soccer balls moving towards
-                   the goal and players need to use the arrows on their keyboards to move a keeper’s glove and defend them
-                </p> <!-- JOB DESCRIPTION  -->
-            </div>
-        </div>
-
-    </div>
-</div>
         <div class="container">
     <h3 class="experience-title">Education</h3>
 
     <div class="experience-wrapper">
         <div class="company-wrapper clearfix">
             <div class="experience-title">University of Virginia</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-            <div class="time">Aug 2019 - May 2023</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+            <div class="time">2019 - 2023</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
         </div>
 
         <div class="job-wrapper clearfix">
             <div class="experience-title">B.A in Computer Science <br> 
-                B.A in Economics - Concentration in Industrial Organization <br>
+                B.A in Economics <br> &nbsp&nbsp Concentration in Industrial Organization <br>
                 Minor in Data Science  </div> <!-- JOB TITLE  -->
             <div class="company-description">
-                <p>GPA: CS 3.67 | ECON 3.5 | Cumulative 3.47</p> <!-- JOB DESCRIPTION  -->
+                <p>GPA:CS 3.67|ECON 3.5|Cumulative 3.47</p> <!-- JOB DESCRIPTION  -->
             </div>
         </div>
     </div>
@@ -350,7 +266,16 @@
 
         </div>
     </section>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    
+    <!-- Load our React component. -->
+   <script type="text/babel" src="./assets/js/experience.js"></script>
+   <script type="text/babel" src="./assets/js/projects.js"></script>
 
+
+</body>
     <div class="clearfix"></div>
 </div>
 
@@ -421,9 +346,7 @@
                     let bod = res.split("|")[1]  
                     console.log(bod)         
                     return Email.send({
-                        Host: "smtp.elasticemail.com",
-                        Username: "cesarmontalvernegodoy@gmail.com",
-                        Password: "25A56F2119B4A96DD7583E39A72DB07F5CF8!",
+                        SecureToken : "bb2437e8-1357-4abd-818f-4612470571df",
                         To: "cesarmontalvernegodoy@gmail.com",
                         From: "cesarmontalvernegodoy@gmail.com",
                         Subject: sub,
