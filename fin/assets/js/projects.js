@@ -111,8 +111,7 @@ class ReactProjects extends React.Component {
                   <div className="">
                       <p className="test2">Gate Dilemma<br></br><a>2020</a></p>
                       <ul className="test3">
-                          <li>Programmed an IOS and Android app for the Deparment of Psychology at UVA to research strategies people use to make friends</li>
-                          <li>Leveraged a combination of redux architecture along with firebase and google sheets apis to allow researchers complete control of the variables and events in the game</li>
+                          <li>Players are presented with boolean inputs and a boolean output and the player is prompted to choose a logical gate that will make the statement correct before the time is up.</li>
                           <li><a target ="_blank" href="projects.html#gatedilemma">Learn More</a></li>
                       </ul>
                   </div>
@@ -122,8 +121,7 @@ class ReactProjects extends React.Component {
                   <div className="">
                       <p className="test2">Libertadores<br></br><a>2019</a></p>
                       <ul className="test3">
-                          <li>Programmed an IOS and Android app for the Deparment of Psychology at UVA to research strategies people use to make friends</li>
-                          <li>Leveraged a combination of redux architecture along with firebase and google sheets apis to allow researchers complete control of the variables and events in the game</li>
+                          <li>One or two players need to control soccer gloves to avoid goals beeing scored.</li>
                           <li><a target ="_blank" href="projects.html#libertadores">Learn More</a></li>
                       </ul>
                   </div>

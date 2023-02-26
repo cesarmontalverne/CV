@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+    "path": ".",
+    "title": "Cesar Godoy"
+    })
+    @@include('./_navigation.html', {
+    "path": ".",
+    "classes": "navbar-light navbar-theme-secondary"
+    })
+</head>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <section class="section-padding">
+        <div class="container project-title-wrapper">
+            
+            <h1>Projects</h1>
+            <!--
+            <div class="project-topic">
+                <div class="d-flex align-items-center">
+                    <a href="#Data Science" target="_blank" class="btn btn-md haha text-white d-none d-md-inline animate-up-2">Data Science</a>
+                    <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <button>App</button>
+                <button>Web</button>
+                <button>Python</button>
+            </div>
+        -->
+        <div id="text_selector_container"></div>
+
+        </div>
+        <h2 id="apps">Apps</h2>
+        <div class="a"></div>
+        @@include('./projects/_hoosville.html', {
+            "path": "."
+        })
+        <h2 id="datascience">Data Science</h2>
+        <div class="a"></div>
+        @@include('./projects/_whatsappAnalyzer.html', {
+            "path": "."
+        })
+        @@include('./projects/_FUTPricePred.html', {
+            "path": "."
+        })
+        @@include('./projects/_USAObesity.html', {
+            "path": "."
+        })
+        @@include('./projects/_winningChessOpenings.html', {
+            "path": "."
+        })
+        <h2>Pygames</h2>
+        <div name="pygames" class="a"></div>
+        @@include('./projects/_gateDilemma.html', {
+            "path": "."
+        })
+        @@include('./projects/_libertadores.html', {
+            "path": "."
+        })
+    </section>
+    <style>
+        h2{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .a{
+            background:#183B56;
+            padding:1px 10px;
+        }
+    </style>
+    
+
+</body>
+    <div class="clearfix"></div>
+
+@@include('./_footer.html', {
+"path": "."
+})
+
+</html>

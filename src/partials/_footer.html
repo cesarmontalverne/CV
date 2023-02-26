@@ -1,0 +1,88 @@
+<footer class="footer py-5 pt-lg-6">
+    <!--
+    <div class="sticky-left d-flex align-items-center bg-white p-3 pt-4 px-4 border border-soft shadow-sm rounded">
+        <span class="mr-3 d-block font-small mb-1">Open source ❤️</span>
+        Place this tag where you want the button to render. 
+        <a class="github-button" href="https://github.com/themesberg/swipe-one-page-bootstrap-5-template" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themesberg/swipe-one-page-bootstrap-5-template on GitHub">Star</a>
+    </div>
+    -->
+    <div class="sticky-right">
+        <a href="#home" class="icon icon-primary icon-md btn btn-icon-only btn-white border border-soft shadow-soft animate-up-3">
+            <span class="fas fa-chevron-up"></span>
+        </a>
+    </div>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-md-4">
+                <p> why not try every possibiliy?</p>
+                <ul class="social-buttons mb-5 mb-lg-0">
+                    <li>
+                        <a target="_blank" href="https://github.com/cesarmontalverne" aria-label="github social link" class="icon icon-md icon-github mr-3">
+                            <span class="fab fa-github"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/cesar-a-godoy/" class="icon icon-md icon-facebook" aria-label="dribbble social link" >
+                            <span class="fab fa-linkedin"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-5 mb-lg-0">
+                <span class="h5">Cesar Godoy</span>
+                <ul class="footer-links mt-2">
+                    <li><a target="_blank" href="about.html">About</a></li>
+                    <li><a target="_blank" href="cv.html">CV</a></li>
+                    <li><a target="_blank" href="projects.html">Projects</a></li>
+                    <li><a target="_blank" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 mb-5 mb-lg-0">
+                <div>
+                <form onsubmit="sendEmail(); reset(); return false;">
+                <h3>Contact Me</h3>
+                <input type="email" id="email" placeholder="Email*"></input>
+                <input type="text" id="linkedin" placeholder="LinkedIn*"></input>
+                <input type="company" id="company" placeholder="Company Name(optional)"></input>
+                <input type="job-listing" id="job-listing" placeholder="Job Listing URL(optional)"></input>
+                <input type="details" id="details" placeholder="Details(optional)"></input>
+                <button type="submit">Send</button>
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script>
+            function sendEmail() {
+                return new Promise((resolve, reject)=>{
+                    if(document.getElementById("linkedin").value!=="" && document.getElementById("email").value!==""){
+                        resolve(document.getElementById("linkedin").value+" @ "+document.getElementById("email").value 
+                        +   "|" + "linkedin: " + document.getElementById("linkedin").value + 
+                            "\nemail: " + document.getElementById("email").value + 
+                            "\ncompany: " +document.getElementById("company").value +
+                            "\njob listing: "+document.getElementById("job-listing").value)
+                    } else{
+                        alert("please fill in the mandatory fields")
+                    }
+                }).then((res)=>{
+                    let sub = res.split("|")[0]
+                    let bod = res.split("|")[1]  
+                    console.log(bod)         
+                    return Email.send({
+                        SecureToken : "bb2437e8-1357-4abd-818f-4612470571df",
+                        To: "cesarmontalvernegodoy@gmail.com",
+                        From: "cesarmontalvernegodoy@gmail.com",
+                        Subject: sub,
+                        Body: bod
+                    })
+            }).then(
+                    (message) => alert(message)
+                );
+            }
+            
+            
+            </script>
+            </form>
+        </div>
+        
+        </div>
+        <div class="d-flex text-center justify-content-center align-items-center" role="contentinfo">
+            <p class="font-weight-normal font-small mb-0">Copyright © Themesberg 2019-<span class="current-year">2020</span>. All rights reserved.</p>
+            </div>
+</footer>

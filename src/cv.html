@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+    "path": ".",
+    "title": "Cesar Godoy"
+    })
+    @@include('./_navigation.html', {
+    "path": ".",
+    "classes": "navbar-light navbar-theme-secondary"
+    })
+</head>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<div class="resume-wrapper">
+    <section class="profile section-padding">
+        <div class="container">
+            <div class="picture-resume-wrapper">
+                <div class="picture-resume">
+                    <span><img src="https://media.licdn.com/dms/image/D4E03AQEPl3lhDsShJw/profile-displayphoto-shrink_800_800/0/1677194351121?e=1682553600&v=beta&t=x8Zq3O-jlLfH3Gxv9URhPMvaLhKMacPc53X_XIeUfD4" alt="" /></span>
+                    <svg version="1.1" viewBox="0 0 350 350">
+
+                        <defs>
+                            <filter id="goo">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+                                <feColorMatrix in="blur" mode="matrix"
+                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9" result="cm" />
+                            </filter>
+                        </defs>
+
+
+                        <g filter="url(#goo)">
+
+                            <circle id="main_circle" class="st0" cx="171.5" cy="175.6" r="130" />
+
+                            <circle id="circle" class="bubble0 st1" cx="171.5" cy="175.6" r="122.7" />
+                            <circle id="circle" class="bubble1 st1" cx="171.5" cy="175.6" r="122.7" />
+                            <circle id="circle" class="bubble2 st1" cx="171.5" cy="175.6" r="122.7" />
+                            <circle id="circle" class="bubble3 st1" cx="171.5" cy="175.6" r="122.7" />
+                            <circle id="circle" class="bubble4 st1" cx="171.5" cy="175.6" r="122.7" />
+                            <circle id="circle" class="bubble5 st1" cx="171.5" cy="175.6" r="122.7" />
+                            <circle id="circle" class="bubble6 st1" cx="171.5" cy="175.6" r="122.7" />
+                            <circle id="circle" class="bubble7 st1" cx="171.5" cy="175.6" r="122.7" />
+                            <circle id="circle" class="bubble8 st1" cx="171.5" cy="175.6" r="122.7" />
+                            <circle id="circle" class="bubble9 st1" cx="171.5" cy="175.6" r="122.7" />
+                            <circle id="circle" class="bubble10 st1" cx="171.5" cy="175.6" r="122.7" />
+
+                        </g>
+                    </svg>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="name-wrapper">
+                <h1 class="display-2 font-weight-bolder mb-4">Cesar <br />Godoy</h1><!-- YOUR NAME AND LAST NAME  -->
+            </div>
+            <div class="clearfix"></div>
+            @@include('./cv/_info.html', {
+                "path": "."
+                })
+    </section>
+
+    <section class="experience section-padding">
+        <div class="container">
+            <h3 class="experience-title">Experience</h3>
+            <div id="experience_container"></div>
+        </div>
+        <div class="container">
+            <h3 class="experience-title">Projects</h3>
+            <div id="projects_container"></div>
+        </div>
+
+        @@include('./cv/_education.html', {
+            "path": "."
+            })
+        <!--Skill experience-->
+        @@include('./cv/_skills.html', {
+            "path": "."
+            })
+
+           
+
+        </div>
+    </section>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    
+    <!-- Load our React component. -->
+   <script type="text/babel" src="./assets/js/experience.js"></script>
+   <script type="text/babel" src="./assets/js/projects.js"></script>
+
+
+</body>
+    <div class="clearfix"></div>
+</div>
+
+@@include('./_footer.html', {
+"path": "."
+})
+
+</html>

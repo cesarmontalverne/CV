@@ -1,0 +1,51 @@
+.contact-background{
+    width: "100%";
+    height: "100%";
+    background: #183B56;
+    color:#183B56;
+    padding:10;
+}
+.contact-position{
+    display: flex;
+    align-items: center;
+}
+.contact-style{
+    border-radius: 10;
+    padding:100;
+}
+.contact-page{
+    padding:10px;
+    justify-content: center;
+}
+form{
+    background:#fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    .larger-text{
+        height: 100px;
+        text-align: start;
+    }
+    button{
+        padding:8px 20px;
+        background: $orange;
+        color:$white;
+        border:0;
+        border-radius: 10px;
+        font-size: 18px;
+        outline:none;
+    };
+    input{
+        border:0;
+        margin:10px;
+        width: 400px;
+        outline:none;
+        padding:10px;
+        background: #f5f5f5;
+        border-radius: 5px;
+        font-size: 15px;
+    };
+    
+}

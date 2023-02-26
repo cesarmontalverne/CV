@@ -1,0 +1,39 @@
+<form class="contact-page" onsubmit="sendEmail(); reset(); return false;">
+    <h3>Contact Me</h3>
+    <input type="email" id="email" placeholder="Email*"></input>
+    <input type="text" id="linkedin" placeholder="LinkedIn*"></input>
+    <input type="company" id="company" placeholder="Company Name(optional)"></input>
+    <input type="job-listing" id="job-listing" placeholder="Job Listing URL(optional)"></input>
+    <input class="larger-text" type="details" id="details" placeholder="Details(optional)"></input>
+    <button type="submit">Send</button>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+function sendEmail() {
+    return new Promise((resolve, reject)=>{
+        if(document.getElementById("linkedin").value!=="" && document.getElementById("email").value!==""){
+            resolve(document.getElementById("linkedin").value+" @ "+document.getElementById("email").value 
+            +   "|" + "linkedin: " + document.getElementById("linkedin").value + 
+                "\nemail: " + document.getElementById("email").value + 
+                "\ncompany: " +document.getElementById("company").value +
+                "\njob listing: "+document.getElementById("job-listing").value)
+        } else{
+            alert("please fill in the mandatory fields")
+        }
+    }).then((res)=>{
+        let sub = res.split("|")[0]
+        let bod = res.split("|")[1]  
+        return Email.send({
+            SecureToken : "bb2437e8-1357-4abd-818f-4612470571df",
+            To: "cesarmontalvernegodoy@gmail.com",
+            From: "cesarmontalvernegodoy@gmail.com",
+            Subject: sub,
+            Body: bod
+        })
+}).then(
+        (message) => alert(message)
+    );
+}
+
+
+</script>
+</form>

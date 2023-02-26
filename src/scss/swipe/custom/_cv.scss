@@ -1,0 +1,372 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+$profileBg:#fff;
+$skillsBg:#183B56;
+$profileColor:#9099a0;
+$skillsColor:#9099a0; 
+$linkColor:#fff;
+$boldColor:#4a4e51;
+$time:0.6s;
+
+$portuguese:100%;
+$english:95%;
+$spanish:75%;
+$python:80%;
+$java:70%;
+$c:65%;
+$javascript:75%;
+$r:85%;
+$mysql:80%;
+$html:80%;
+$css:80%;
+$latex:75%;
+$postman:90%;
+$expo:85%;
+$github:80%;
+$gulp:35%;
+
+
+ 
+@mixin breakpoint($point) {
+  @if $point == papa-bear {
+    @media (max-width: 1500px)  { @content; }
+  }
+  @if $point == mama-bear {
+    @media (max-width: 1200px)  { @content; }
+  }
+  @if $point == brother-bear {
+    @media (max-width: 850px)  { @content; }
+  }
+  @else if $point == baby-bear {
+    @media (max-width: 450px)  { @content; }
+  }
+}
+.allbuttons{
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.test3{
+  color:#fff;
+  text-align: justify;
+
+  li{
+    list-style: "\00BB";
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    a{
+      color:$orange;
+    }
+  }
+}
+.test2{
+  text-align: center;
+  color:#fff;
+  a{
+    font-size: 10px;
+  }
+}
+.test{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  text-align: start;
+}
+.dates{
+  font-size: 10px;
+  text-align: center;
+}
+.experience-wrapper{
+  background: #183B56;
+}
+.experience-button{
+  background: #183B56;
+  border:none;
+  padding: 10px;
+  width: 40%;
+  min-width: 120px;
+  color:$white;
+  text-align: center;
+  &:hover{
+    background:#184c74;
+  }
+}
+.selected-button{
+  background: #184c74;
+}
+.experience-tracker{
+  width:2px;
+  height: "100%";
+  background: $white;
+}
+.selected-tracker{
+  background: $orange;
+}
+.side-by-side{
+  display: flex;
+  flex-direction: row;
+
+}
+
+*, *::after, *::before {
+  box-sizing:border-box;
+}
+
+html,body {
+  height: 100%;
+}
+
+a{color:$skillsColor; text-decoration:none;}
+.clearfix::after, .clearfix::before {
+  content: " ";
+	display: table;
+}
+.clearfix::after{clear:both;}
+.bold {color:$boldColor; font-weight:400;}
+
+.profile {
+  background:$profileBg;
+  width:47%;
+  float:left;
+  color:$profileColor;
+  @include breakpoint(brother-bear) { width: 100%; }
+  .name-wrapper {
+    float:left;
+    width:60%;
+  }
+ 
+  li {
+      margin-bottom:10px;
+    }
+  .picture-resume-wrapper {
+    width:40%;
+    display:block;
+    float:left;
+    @include breakpoint(mama-bear) {
+       width:100%;
+    }
+  }
+  .picture-resume {
+    width:220px;
+    height:220px;
+    background-size:cover;
+    border-radius:50%;
+    margin-right:0px;
+    display:table;
+    position:relative;
+    vertical-align:middle;
+    span {
+        display:table-cell;
+        vertical-align: middle;
+        position:relative;
+        margin:0 auto;
+        z-index:10;
+       text-align:center
+    }
+    img {
+      border-radius:50%;
+      width:130px;
+      @include breakpoint(papa-bear) {
+        width:80px;
+      }
+      @include breakpoint(mama-bear) {
+        width:120px;
+        height:120px;
+      }
+    }
+    @include breakpoint(papa-bear) {
+      width:150px;
+      height:150px;
+    }
+    @include breakpoint(mama-bear) {
+      width:200px;
+      height:200px;
+    }
+     @include breakpoint(baby-bear) { width:180px;height:180px; } 
+  }
+  .contact-info{
+    margin-top:100px;
+    font-weight:300;
+    @include breakpoint(mama-bear) {margin-top:70px; } 
+    @include breakpoint(baby-bear) { margin-top:50px; } 
+  }
+  .list-titles {
+    float:left;
+    text-align:left;
+    font-weight:"bold";
+    color:$boldColor;
+    list-style-type: none;
+  }
+  .list-content{
+    float:left;
+    width:60%;
+    text-align:left;
+    font-weight:300;
+    list-style-type: none;
+  }
+  .contact-presentation {
+    text-align:left;
+    font-weight:300;
+    margin-top:50px;
+    margin-bottom:50px;
+    @include breakpoint(mama-bear) {margin-top:70px;margin-bottom:70px; } 
+    @include breakpoint(brother-bear) {margin-top:50px;margin-bottom:50px; } 
+    
+  }
+  svg {
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    //display:none;
+  }
+
+  .st0, .st1 {
+    fill:#183B56;
+  }
+
+}
+.experience {
+  background:$skillsBg;
+  width:53%;
+  float:left;
+  position:relative;
+  color:$skillsColor;
+  font-weight:300;
+  min-height:100%;
+  min-height:100vh;
+  @include breakpoint(brother-bear) { width: 100%; } 
+  h3.experience-title {
+    color:#fff;
+    text-align:left;
+    text-transform:uppercase;
+    font-size:1.2em;
+    margin-top: 10px;
+    margin-bottom:20px;
+    font-weight:400;
+  }
+  .company-wrapper {
+    width:30%;
+    float:left;
+    text-align:left;
+    padding-right:5%;
+    margin-bottom:60px;
+    @include breakpoint(baby-bear) {width:100%; margin-bottom:20px;} 
+  }
+  .job-wrapper {
+    width:70%;
+    float:left;
+    text-align:left;
+    padding-right:5%;
+    margin-bottom:60px;
+    @include breakpoint(baby-bear) {width:100%;margin-bottom:40px;} 
+  }
+  .experience-title {
+      color:white;
+      margin-bottom:15px;;
+    }
+}
+
+.section-padding {
+ padding:80px 60px 40px 40px;
+ @include breakpoint(brother-bear) { padding:80px 15% 40px 10%; }
+ @include breakpoint(baby-bear) { padding:40px 10% 20px 5%; }
+}
+
+.full-size{
+    width:100%;
+}
+.half-size{
+    width:50%;
+}
+.white{
+    color:#fff;
+}
+.blue{
+    color:#183B56;
+}
+
+
+.section-wrapper {
+  float:left;
+  text-align:left;
+  color:$skillsColor;
+  font-weight:300;
+  margin-bottom:20px;
+  @include breakpoint(baby-bear) {width:100%;}
+  &:nth-child(3){ 
+    padding-right:8%;
+  }
+  li{
+    list-style: "\00BB";
+  }
+  h3.section-title {
+    text-align:left;
+    text-transform:uppercase;
+    font-size:1.2em;
+    margin-bottom:20px;
+    font-weight:400;
+  }
+  .skill-percentage1, .skill-percentage2, .skill-percentage3 {
+    margin-bottom:10px;
+    list-style-type: none;
+    position:relative;
+    &::after {
+      content:"";
+      width:100%;
+      height:6px;
+      background:$boldColor;
+      display:block;
+      margin-top:3px;
+    }
+    &::before{
+      content:"";
+      height:6px;
+      background:$linkColor;
+      position:absolute;
+      margin-top:3px;
+      bottom:0;
+    }
+    &:nth-child(1)::before {width:$portuguese;animation: portuguese $time ease;}
+    &:nth-child(2)::before {width:$english;animation: english $time ease;}
+    &:nth-child(3)::before {width:$spanish;animation: spanish $time ease;}
+    
+  }
+  .skill-percentage2{
+    &:nth-child(1)::before {width:$postman;animation: postman $time ease;}
+    &:nth-child(2)::before {width:$expo;animation: expo $time ease;}
+    &:nth-child(3)::before {width:$github;animation: github $time ease;}
+    &:nth-child(4)::before {width:$gulp;animation: gulp $time ease;}
+
+  }
+  .skill-percentage3{
+    &:nth-child(1)::before {width:$python; animation: python $time ease;} 
+    &:nth-child(2)::before {width:$java; animation: java $time ease;} 
+    &:nth-child(3)::before {width:$c;animation: c $time ease;}
+    &:nth-child(4)::before {width:$javascript;animation: javascript $time ease;}
+    &:nth-child(5)::before {width:$r;animation: r $time ease;}
+    &:nth-child(6)::before {width:$mysql;animation: mysql $time ease;}
+    &:nth-child(7)::before {width:$html;animation: html $time ease;}
+    &:nth-child(8)::before {width:$css;animation: css $time ease;}
+    &:nth-child(9)::before {width:$latex;animation: latex $time ease;}
+  }
+}
+ 
+@keyframes portuguese {from {width:0%;}to {width:$portuguese;}}
+@keyframes english {from {width:0%;}to {width:$english;}}
+@keyframes spanish {from {width:0%;}to {width:$spanish;}}
+@keyframes python {from {width:0%;}to {width:$python;}}
+@keyframes java {from {width:0%;}to {width:$java;}}  
+@keyframes c {from {width:0%;}to {width:$c;}}
+@keyframes javascript {from {width:0%;}to {width:$javascript;}}
+@keyframes r {from {width:0%;}to {width:$r;}}
+@keyframes mysql {from {width:0%;}to {width:$mysql;}}
+@keyframes html {from {width:0%;}to {width:$html;}}
+@keyframes css {from {width:0%;}to {width:$css;}}
+@keyframes latex {from {width:0%;}to {width:$latex;}}
+@keyframes postman {from {width:0%;}to {width:$postman;}}
+@keyframes expo {from {width:0%;}to {width:$expo;}}
+@keyframes github {from {width:0%;}to {width:$github;}}
+@keyframes gulp {from {width:0%;}to {width:$gulp;}}
