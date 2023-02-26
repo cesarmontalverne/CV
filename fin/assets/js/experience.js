@@ -8,9 +8,6 @@ class ReactExperience extends React.Component {
     super(props);
     this.state = { counter: 0 };
   }
-  test = function(b){
-    return String(b)
-  }
   indButton = function(buttonText, toSet){
     if(this.state.counter==toSet){
         return <div>
@@ -59,7 +56,7 @@ class ReactExperience extends React.Component {
           case 1:
               return (
                   <div className="">
-                      <p className="test2">Cortina<br></br><a>Jun 2022 - Nov 2023</a></p>
+                      <p className="test2">Cortina<br></br><a>Jun 2022 - Nov 2022</a></p>
                       <ul className="test3">
                           <li>Researched and documented other system's APIs for integration purposes</li>
                           <li>Created diagrams that specified how to integrate to a particular system, in a high level</li>

@@ -1,17 +1,15 @@
 'use strict';
 
 const e = React.createElement;
-const project_names = ["Hoosville", "WhatsApp Analyzer", "FUT Price Prediction", "USA Fast Food and Obesity", "Winning Chess Openings", "Gate Dillemma", "Libertadores"]
-
+const project_names = ["Hoosville","WhatsApp Analyzer","FUT Price Prediction", 
+"USA Fast Food and Obesity", "Winning Chess Openings", "Gate Dilemma", "Libertadores"]
 
 class ReactProjects extends React.Component {
   constructor(props) {
     super(props);
     this.state = { counter: 0 };
   }
-  test = function(b){
-    return String(b)
-  }
+
   indButton = function(buttonText, toSet){
     if(this.state.counter==toSet){
         return <div>
@@ -55,7 +53,6 @@ class ReactProjects extends React.Component {
                           <li>Planned and developed IOS and Android App with the UVA Psychology deparment.</li>
                           <li>The research aims at gaining insight about how income and propensity to move influence people's friend-making strategy.</li>
                           <li>The app tries to mimic the world. You need to befriend people while events happen to you.</li>
-
                           <li><a target ="_blank" href="projects.html#hoosville">Learn More</a></li>
                       </ul>
                   </div>
@@ -81,6 +78,7 @@ class ReactProjects extends React.Component {
                           <li>Predicted prices of Fifa Ultimate Team players based on all of their attributes.</li>
                           <li>Used a Random Forests algorithm to find out which factors were the most important for each position.</li>
                           <li><a target ="_blank" href="projects.html#fut">Learn More</a></li>
+                          <li><a target ="_blank" href="live_FUT.html">See Project!</a></li>
                       </ul>
                   </div>
               )
@@ -92,6 +90,7 @@ class ReactProjects extends React.Component {
                           <li>Predicted obesity rates on american counties using multiple factors, including fast food restaurants.</li>
                           <li>Used the importance metric from the Random Forests algortithm to establish a correlation between number of fast food restaurants in a county and its obesity rate.</li>
                           <li><a target ="_blank" href="projects.html#usaobesity">Learn More</a></li>
+                          <li><a target ="_blank" href="live_USAObesity.html">See Project!</a></li>
                       </ul>
                   </div>
               )
@@ -103,17 +102,18 @@ class ReactProjects extends React.Component {
                           <li>Programmed an IOS and Android app for the Deparment of Psychology at UVA to research strategies people use to make friends</li>
                           <li>Leveraged a combination of redux architecture along with firebase and google sheets apis to allow researchers complete control of the variables and events in the game</li>
                           <li><a target ="_blank" href="projects.html#winningchessopenings">Learn More</a></li>
+                          <li><a target ="_blank" href="live_WinningChessOpenings.html">See Project!</a></li>
                       </ul>
                   </div>
               )
           case 5:
               return (
                   <div className="">
-                      <p className="test2">Gate Dillemma<br></br><a>2020</a></p>
+                      <p className="test2">Gate Dilemma<br></br><a>2020</a></p>
                       <ul className="test3">
                           <li>Programmed an IOS and Android app for the Deparment of Psychology at UVA to research strategies people use to make friends</li>
                           <li>Leveraged a combination of redux architecture along with firebase and google sheets apis to allow researchers complete control of the variables and events in the game</li>
-                          <li><a target ="_blank" href="projects.html#gatedillemma">Learn More</a></li>
+                          <li><a target ="_blank" href="projects.html#gatedilemma">Learn More</a></li>
                       </ul>
                   </div>
               )
