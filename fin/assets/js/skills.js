@@ -107,7 +107,7 @@ class ReactExperience extends React.Component {
                 <div class="section-wrapper clearfix full-size">
                 <div class="section-wrapper clearfix half-size">
             
-                <div class="experience-title">Data Science Tools</div>
+                <div class="experience-title">DS Tools</div>
                 <ul>
                     <li class="dsTools">R/RStudio/Rmd</li>
                     <li class="dsTools">Python/Pandas/Numpy</li>
@@ -117,7 +117,7 @@ class ReactExperience extends React.Component {
                 </ul>
                 </div>
                 <div class="section-wrapper clearfix half-size">
-                <div class="experience-title">Data Science Concepts</div>
+                <div class="experience-title">DS Concepts</div>
                 <ul>
                     <li class="dsConcepts">Databases</li>
                     <li class="dsConcepts">Basic ML(knn, decision trees, random forests...)</li>
