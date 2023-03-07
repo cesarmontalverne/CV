@@ -25440,7 +25440,6 @@ blockquote {
   margin-bottom: 20px; }
 
 .test3 {
-  color: #fff;
   text-align: justify; }
   .test3 li {
     list-style: "\00BB";
@@ -25451,8 +25450,7 @@ blockquote {
       color: #FF8000; }
 
 .test2 {
-  text-align: center;
-  color: #fff; }
+  text-align: center; }
   .test2 a {
     font-size: 10px; }
 
@@ -25475,21 +25473,46 @@ blockquote {
   border: none;
   padding: 10px;
   width: 40%;
-  min-width: 120px;
+  min-width: 123px;
   color: #ffffff;
   text-align: center; }
   .experience-button:hover {
     background: #184c74; }
 
 .selected-button {
-  background: #184c74; }
+  background: #184c74;
+  border-style: inset;
+  border-color: #FF8000;
+  color: #ffffff; }
 
 .experience-tracker {
   width: 2px;
   height: "100%";
   background: #ffffff; }
 
-.selected-tracker {
+.selected-experience-tracker {
+  background: #FF8000; }
+
+.not-selected-skill-button {
+  border: none;
+  background: #ffffff;
+  color: #183B56; }
+
+.skill-button {
+  padding: 10px;
+  width: 40%;
+  min-width: 125px;
+  text-align: center; }
+  .skill-button:hover {
+    background: #184c74;
+    color: #ffffff; }
+
+.skill-tracker {
+  width: 2px;
+  height: "100%";
+  background: #183B56; }
+
+.selected-skill-tracker {
   background: #FF8000; }
 
 .side-by-side {
@@ -25701,72 +25724,261 @@ a {
     font-size: 1.2em;
     margin-bottom: 20px;
     font-weight: 400; }
-  .section-wrapper .skill-percentage1, .section-wrapper .skill-percentage2, .section-wrapper .skill-percentage3 {
+  .section-wrapper .webTools, .section-wrapper .webConcepts, .section-wrapper .devTools, .section-wrapper .devConcepts,
+  .section-wrapper .dsTools, .section-wrapper .dsConcepts, .section-wrapper .languages, .section-wrapper .frontend {
     margin-bottom: 10px;
     list-style-type: none;
     position: relative; }
-    .section-wrapper .skill-percentage1::after, .section-wrapper .skill-percentage2::after, .section-wrapper .skill-percentage3::after {
+    .section-wrapper .webTools::after, .section-wrapper .webConcepts::after, .section-wrapper .devTools::after, .section-wrapper .devConcepts::after,
+    .section-wrapper .dsTools::after, .section-wrapper .dsConcepts::after, .section-wrapper .languages::after, .section-wrapper .frontend::after {
       content: "";
       width: 100%;
       height: 6px;
-      background: #4a4e51;
+      background: #ffffff;
       display: block;
       margin-top: 3px; }
-    .section-wrapper .skill-percentage1::before, .section-wrapper .skill-percentage2::before, .section-wrapper .skill-percentage3::before {
+    .section-wrapper .webTools::before, .section-wrapper .webConcepts::before, .section-wrapper .devTools::before, .section-wrapper .devConcepts::before,
+    .section-wrapper .dsTools::before, .section-wrapper .dsConcepts::before, .section-wrapper .languages::before, .section-wrapper .frontend::before {
       content: "";
       height: 6px;
-      background: #fff;
+      background: #4a4e51;
       position: absolute;
       margin-top: 3px;
       bottom: 0; }
-    .section-wrapper .skill-percentage1:nth-child(1)::before, .section-wrapper .skill-percentage2:nth-child(1)::before, .section-wrapper .skill-percentage3:nth-child(1)::before {
-      width: 100%;
-      animation: portuguese 0.6s ease; }
-    .section-wrapper .skill-percentage1:nth-child(2)::before, .section-wrapper .skill-percentage2:nth-child(2)::before, .section-wrapper .skill-percentage3:nth-child(2)::before {
-      width: 95%;
-      animation: english 0.6s ease; }
-    .section-wrapper .skill-percentage1:nth-child(3)::before, .section-wrapper .skill-percentage2:nth-child(3)::before, .section-wrapper .skill-percentage3:nth-child(3)::before {
-      width: 75%;
-      animation: spanish 0.6s ease; }
-  .section-wrapper .skill-percentage2:nth-child(1)::before {
-    width: 90%;
-    animation: postman 0.6s ease; }
-  .section-wrapper .skill-percentage2:nth-child(2)::before {
-    width: 85%;
-    animation: expo 0.6s ease; }
-  .section-wrapper .skill-percentage2:nth-child(3)::before {
+  .section-wrapper .webTools:nth-child(1)::before {
+    width: 50%;
+    animation: aws 0.6s ease; }
+  .section-wrapper .webTools:nth-child(2)::before {
+    width: 50%;
+    animation: nginx 0.6s ease; }
+  .section-wrapper .webTools:nth-child(3)::before {
     width: 80%;
-    animation: github 0.6s ease; }
-  .section-wrapper .skill-percentage2:nth-child(4)::before {
+    animation: sql 0.6s ease; }
+  .section-wrapper .webTools:nth-child(4)::before {
+    width: 65%;
+    animation: nosql 0.6s ease; }
+  .section-wrapper .webTools:nth-child(5)::before {
+    width: 85%;
+    animation: postman 0.6s ease; }
+  .section-wrapper .webTools:nth-child(6)::before {
+    width: 85%;
+    animation: react 0.6s ease; }
+  .section-wrapper .webTools:nth-child(7)::before {
+    width: 90%;
+    animation: expo 0.6s ease; }
+  .section-wrapper .webTools:nth-child(8)::before {
     width: 35%;
     animation: gulp 0.6s ease; }
-  .section-wrapper .skill-percentage3:nth-child(1)::before {
-    width: 80%;
-    animation: python 0.6s ease; }
-  .section-wrapper .skill-percentage3:nth-child(2)::before {
-    width: 70%;
-    animation: java 0.6s ease; }
-  .section-wrapper .skill-percentage3:nth-child(3)::before {
-    width: 65%;
-    animation: c 0.6s ease; }
-  .section-wrapper .skill-percentage3:nth-child(4)::before {
-    width: 75%;
-    animation: javascript 0.6s ease; }
-  .section-wrapper .skill-percentage3:nth-child(5)::before {
-    width: 85%;
-    animation: r 0.6s ease; }
-  .section-wrapper .skill-percentage3:nth-child(6)::before {
-    width: 80%;
-    animation: mysql 0.6s ease; }
-  .section-wrapper .skill-percentage3:nth-child(7)::before {
-    width: 80%;
+  .section-wrapper .webTools:nth-child(9)::before {
+    width: 90%;
     animation: html 0.6s ease; }
-  .section-wrapper .skill-percentage3:nth-child(8)::before {
+  .section-wrapper .webTools:nth-child(10)::before {
     width: 80%;
     animation: css 0.6s ease; }
-  .section-wrapper .skill-percentage3:nth-child(9)::before {
+  .section-wrapper .webConcepts:nth-child(1)::before {
+    width: 50%;
+    animation: deploying 0.6s ease; }
+  .section-wrapper .webConcepts:nth-child(2)::before {
+    width: 60%;
+    animation: cloud 0.6s ease; }
+  .section-wrapper .webConcepts:nth-child(3)::before {
+    width: 85%;
+    animation: apis 0.6s ease; }
+  .section-wrapper .webConcepts:nth-child(4)::before {
+    width: 70%;
+    animation: databases 0.6s ease; }
+  .section-wrapper .devTools:nth-child(1)::before {
+    width: 85%;
+    animation: python-dev 0.6s ease; }
+  .section-wrapper .devTools:nth-child(2)::before {
+    width: 65%;
+    animation: java 0.6s ease; }
+  .section-wrapper .devTools:nth-child(3)::before {
+    width: 85%;
+    animation: c 0.6s ease; }
+  .section-wrapper .devTools:nth-child(4)::before {
+    width: 85%;
+    animation: github 0.6s ease; }
+  .section-wrapper .devTools:nth-child(5)::before {
+    width: 70%;
+    animation: 70% 0.6s ease; }
+  .section-wrapper .devTools:nth-child(6)::before {
+    width: 95%;
+    animation: terminal 0.6s ease; }
+  .section-wrapper .devConcepts:nth-child(1)::before {
     width: 75%;
-    animation: latex 0.6s ease; }
+    animation: data-structures 0.6s ease; }
+  .section-wrapper .devConcepts:nth-child(2)::before {
+    width: 70%;
+    animation: algorithms 0.6s ease; }
+  .section-wrapper .devConcepts:nth-child(3)::before {
+    width: 65%;
+    animation: software-testing 0.6s ease; }
+  .section-wrapper .devConcepts:nth-child(4)::before {
+    width: 85%;
+    animation: git 0.6s ease; }
+  .section-wrapper .dsTools:nth-child(1)::before {
+    width: 95%;
+    animation: r 0.6s ease; }
+  .section-wrapper .dsTools:nth-child(2)::before {
+    width: 70%;
+    animation: 70% 0.6s ease; }
+  .section-wrapper .dsTools:nth-child(3)::before {
+    width: 85%;
+    animation: 85% 0.6s ease; }
+  .section-wrapper .dsTools:nth-child(4)::before {
+    width: 85%;
+    animation: shiny 0.6s ease; }
+  .section-wrapper .dsTools:nth-child(5)::before {
+    width: 95%;
+    animation: rpubs 0.6s ease; }
+  .section-wrapper .dsConcepts:nth-child(1)::before {
+    width: 70%;
+    animation: databases 0.6s ease; }
+  .section-wrapper .dsConcepts:nth-child(2)::before {
+    width: 85%;
+    animation: knn 0.6s ease; }
+  .section-wrapper .dsConcepts:nth-child(3)::before {
+    width: 90%;
+    animation: feature 0.6s ease; }
+  .section-wrapper .dsConcepts:nth-child(4)::before {
+    width: 70%;
+    animation: nlp 0.6s ease; }
+  .section-wrapper .languages:nth-child(1)::before {
+    width: 100%;
+    animation: portuguese 0.6s ease; }
+  .section-wrapper .languages:nth-child(2)::before {
+    width: 95%;
+    animation: english 0.6s ease; }
+  .section-wrapper .languages:nth-child(3)::before {
+    width: 75%;
+    animation: spanish 0.6s ease; }
+  .section-wrapper .frontend:nth-child(1)::before {
+    width: 90%;
+    animation: 90% 0.6s ease; }
+  .section-wrapper .frontend:nth-child(2)::before {
+    width: 80%;
+    animation: css 0.6s ease; }
+
+@keyframes aws {
+  from {
+    width: 0%; }
+  to {
+    width: 50%; } }
+
+@keyframes nginx {
+  from {
+    width: 0%; }
+  to {
+    width: 50%; } }
+
+@keyframes sql {
+  from {
+    width: 0%; }
+  to {
+    width: 80%; } }
+
+@keyframes nosql {
+  from {
+    width: 0%; }
+  to {
+    width: 65%; } }
+
+@keyframes postman {
+  from {
+    width: 0%; }
+  to {
+    width: 85%; } }
+
+@keyframes react {
+  from {
+    width: 0%; }
+  to {
+    width: 85%; } }
+
+@keyframes expo {
+  from {
+    width: 0%; }
+  to {
+    width: 90%; } }
+
+@keyframes gulp {
+  from {
+    width: 0%; }
+  to {
+    width: 35%; } }
+
+@keyframes deploying {
+  from {
+    width: 0%; }
+  to {
+    width: 50%; } }
+
+@keyframes cloud {
+  from {
+    width: 0%; }
+  to {
+    width: 60%; } }
+
+@keyframes apis {
+  from {
+    width: 0%; }
+  to {
+    width: 85%; } }
+
+@keyframes databases {
+  from {
+    width: 0%; }
+  to {
+    width: 70%; } }
+
+@keyframes r {
+  from {
+    width: 0%; }
+  to {
+    width: 95%; } }
+
+@keyframes python-ds {
+  from {
+    width: 0%; }
+  to {
+    width: 70%; } }
+
+@keyframes plotly {
+  from {
+    width: 0%; }
+  to {
+    width: 85%; } }
+
+@keyframes shiny {
+  from {
+    width: 0%; }
+  to {
+    width: 85%; } }
+
+@keyframes rpubs {
+  from {
+    width: 0%; }
+  to {
+    width: 95%; } }
+
+@keyframes knn {
+  from {
+    width: 0%; }
+  to {
+    width: 85%; } }
+
+@keyframes feature {
+  from {
+    width: 0%; }
+  to {
+    width: 90%; } }
+
+@keyframes nlp {
+  from {
+    width: 0%; }
+  to {
+    width: 70%; } }
 
 @keyframes portuguese {
   from {
@@ -25786,37 +25998,13 @@ a {
   to {
     width: 75%; } }
 
-@keyframes python {
+@keyframes html {
   from {
     width: 0%; }
   to {
-    width: 80%; } }
+    width: 90%; } }
 
-@keyframes java {
-  from {
-    width: 0%; }
-  to {
-    width: 70%; } }
-
-@keyframes c {
-  from {
-    width: 0%; }
-  to {
-    width: 65%; } }
-
-@keyframes javascript {
-  from {
-    width: 0%; }
-  to {
-    width: 75%; } }
-
-@keyframes r {
-  from {
-    width: 0%; }
-  to {
-    width: 85%; } }
-
-@keyframes mysql {
+@keyframes css {
   from {
     width: 0%; }
   to {
@@ -25826,7 +26014,7 @@ a {
   from {
     width: 0%; }
   to {
-    width: 80%; } }
+    width: 90%; } }
 
 @keyframes css {
   from {
@@ -25834,35 +26022,65 @@ a {
   to {
     width: 80%; } }
 
-@keyframes latex {
-  from {
-    width: 0%; }
-  to {
-    width: 75%; } }
-
-@keyframes postman {
-  from {
-    width: 0%; }
-  to {
-    width: 90%; } }
-
-@keyframes expo {
+@keyframes python-dev {
   from {
     width: 0%; }
   to {
     width: 85%; } }
 
+@keyframes java {
+  from {
+    width: 0%; }
+  to {
+    width: 65%; } }
+
+@keyframes c {
+  from {
+    width: 0%; }
+  to {
+    width: 60%; } }
+
 @keyframes github {
   from {
     width: 0%; }
   to {
-    width: 80%; } }
+    width: 85%; } }
 
-@keyframes gulp {
+@keyframes selenium {
   from {
     width: 0%; }
   to {
-    width: 35%; } }
+    width: 70%; } }
+
+@keyframes terminal {
+  from {
+    width: 0%; }
+  to {
+    width: 95%; } }
+
+@keyframes data-structures {
+  from {
+    width: 0%; }
+  to {
+    width: 75%; } }
+
+@keyframes algorithms {
+  from {
+    width: 0%; }
+  to {
+    width: 70%; } }
+
+@keyframes software-testing {
+  from {
+    width: 0%; }
+  to {
+    width: 65%; } }
+
+@keyframes git {
+  from {
+    width: 0%; }
+  to {
+    width: 85%; } }
 
 .mainpic {
   height: 500px; }

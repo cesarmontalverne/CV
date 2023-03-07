@@ -12,7 +12,7 @@ class ReactExperience extends React.Component {
     if(this.state.counter==toSet){
         return <div>
         <div className="side-by-side">
-            <div className="experience-tracker selected-tracker"></div>
+            <div className="experience-tracker selected-experience-tracker"></div>
             <button className="experience-button selected-button" onClick={() =>{ 
                 this.setState({ counter: toSet })
             }}>{buttonText}</button>
@@ -42,8 +42,8 @@ class ReactExperience extends React.Component {
           default:
               return (
                   <div className="">
-                      <p className="test2">Research Assistant<br></br><a>Sep 2021 - present</a></p>
-                      <ul className="test3">
+                      <p className="test2 white">Research Assistant<br></br><a>Sep 2021 - present</a></p>
+                      <ul className="test3 white">
                           <li>Planned and developed IOS and Android App with the UVA Psychology deparment </li>
                           <li>Integrated Qualtrics, google sheets and firebase with APIs or a web view </li>
                           <li>Explained technical concepts to non-technical people</li>
@@ -56,8 +56,8 @@ class ReactExperience extends React.Component {
           case 1:
               return (
                   <div className="">
-                      <p className="test2">Cortina<br></br><a>Jun 2022 - Nov 2022</a></p>
-                      <ul className="test3">
+                      <p className="test2 white">Cortina<br></br><a>Jun 2022 - Nov 2022</a></p>
+                      <ul className="test3 white">
                           <li>Researched and documented other system's APIs for integration purposes</li>
                           <li>Created diagrams that specified how to integrate to a particular system, in a high level</li>
                           <li>Wrote market research papers</li>
