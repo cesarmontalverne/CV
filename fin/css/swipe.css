@@ -25761,20 +25761,11 @@ a {
     width: 85%;
     animation: postman 0.6s ease; }
   .section-wrapper .webTools:nth-child(6)::before {
-    width: 85%;
-    animation: react 0.6s ease; }
+    width: 80%;
+    animation: redux 0.6s ease; }
   .section-wrapper .webTools:nth-child(7)::before {
-    width: 90%;
-    animation: expo 0.6s ease; }
-  .section-wrapper .webTools:nth-child(8)::before {
     width: 35%;
     animation: gulp 0.6s ease; }
-  .section-wrapper .webTools:nth-child(9)::before {
-    width: 90%;
-    animation: html 0.6s ease; }
-  .section-wrapper .webTools:nth-child(10)::before {
-    width: 80%;
-    animation: css 0.6s ease; }
   .section-wrapper .webConcepts:nth-child(1)::before {
     width: 50%;
     animation: deploying 0.6s ease; }
@@ -25855,10 +25846,16 @@ a {
     animation: spanish 0.6s ease; }
   .section-wrapper .frontend:nth-child(1)::before {
     width: 90%;
-    animation: 90% 0.6s ease; }
+    animation: html 0.6s ease; }
   .section-wrapper .frontend:nth-child(2)::before {
     width: 80%;
     animation: css 0.6s ease; }
+  .section-wrapper .frontend:nth-child(6)::before {
+    width: 85%;
+    animation: react 0.6s ease; }
+  .section-wrapper .frontend:nth-child(7)::before {
+    width: 90%;
+    animation: expo 0.6s ease; }
 
 @keyframes aws {
   from {
@@ -25890,17 +25887,11 @@ a {
   to {
     width: 85%; } }
 
-@keyframes react {
+@keyframes redux {
   from {
     width: 0%; }
   to {
-    width: 85%; } }
-
-@keyframes expo {
-  from {
-    width: 0%; }
-  to {
-    width: 90%; } }
+    width: 80%; } }
 
 @keyframes gulp {
   from {
@@ -26021,6 +26012,18 @@ a {
     width: 0%; }
   to {
     width: 80%; } }
+
+@keyframes react {
+  from {
+    width: 0%; }
+  to {
+    width: 85%; } }
+
+@keyframes expo {
+  from {
+    width: 0%; }
+  to {
+    width: 90%; } }
 
 @keyframes python-dev {
   from {

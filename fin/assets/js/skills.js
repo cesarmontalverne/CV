@@ -51,13 +51,12 @@ class ReactExperience extends React.Component {
                 
                 <div class="experience-title">Web Tools</div>
                 <ul>
-                    <li class="webTools">AWS(Amazon Web Services) EC2/RDS</li>
+                    <li class="webTools">AWS EC2/RDS</li>
                     <li class="webTools">nginx/pm2</li>
                     <li class="webTools">SQL/MySQL</li>
-                    <li class="webTools">NoSQL/MongoDB/Firebase</li>
+                    <li class="webTools">NoSQL/Firebase</li>
+                    <li class="webTools">Redux</li>
                     <li class="webTools">Postman</li>
-                    <li class="webTools">React</li>
-                    <li class="webTools">Expo/React Native</li>
                     <li class="webTools">Gulp</li>
 
 
@@ -122,7 +121,7 @@ class ReactExperience extends React.Component {
                     <li class="dsConcepts">Databases</li>
                     <li class="dsConcepts">Basic ML</li>
                     <li class="dsConcepts">Feature Engineering</li>
-                    <li class="dsConcepts">NPL(natural language processing)</li>
+                    <li class="dsConcepts">NPL</li>
                 </ul>
                 </div>
             
@@ -138,10 +137,15 @@ class ReactExperience extends React.Component {
                         <li class="languages">English</li>
                         <li class="languages">Spanish</li>
                     </ul>
-                    <div class="experience-title">Frontend</div> 
+                    
+                </div>
+                <div class="section-wrapper clearfix half-size">
+                <div class="experience-title">Frontend</div> 
                     <ul>
                         <li class="frontend">HTML</li>
                         <li class="frontend">CSS/SCSS</li>
+                        <li class="webTools">React</li>
+                        <li class="webTools">Expo/React Native</li>
                     </ul>
                 </div>
                 </div>
