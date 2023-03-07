@@ -110,7 +110,7 @@ class ReactExperience extends React.Component {
                 <div class="experience-title">DS Tools</div>
                 <ul>
                     <li class="dsTools">R/RStudio/Rmd</li>
-                    <li class="dsTools">Python/Pandas/Numpy</li>
+                    <li class="dsTools">Python/Pandas</li>
                     <li class="dsTools">Plotly/ggplot</li>
                     <li class="dsTools">Shiny</li>
                     <li class="dsTools">Rpubs/Shiny.io</li>
@@ -120,7 +120,7 @@ class ReactExperience extends React.Component {
                 <div class="experience-title">DS Concepts</div>
                 <ul>
                     <li class="dsConcepts">Databases</li>
-                    <li class="dsConcepts">Basic ML(knn, decision trees, random forests...)</li>
+                    <li class="dsConcepts">Basic ML</li>
                     <li class="dsConcepts">Feature Engineering</li>
                     <li class="dsConcepts">NPL(natural language processing)</li>
                 </ul>
