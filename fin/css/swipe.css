@@ -21,8 +21,6 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url(https://fonts.googleapis.com/css?family=Varela+Round);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -25659,7 +25657,8 @@ a {
     font-size: 1.2em;
     margin-top: 10px;
     margin-bottom: 20px;
-    font-weight: 400; }
+    font-weight: 400;
+    font-family: "Spartan", sans-serif; }
   .experience .company-wrapper {
     width: 30%;
     float: left;

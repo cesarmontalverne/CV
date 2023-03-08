@@ -44,7 +44,7 @@ class ReactExperience extends React.Component {
                   <div className="">
                       <p className="test2 white">Research Assistant<br></br><a>Sep 2021 - present</a></p>
                       <ul className="test3 white">
-                          <li>Planned and developed IOS and Android App with the UVA Psychology deparment </li>
+                          <li>Planned and developed IOS and Android App with the UVA Psychology department </li>
                           <li>Integrated Qualtrics, google sheets and firebase with APIs or a web view </li>
                           <li>Explained technical concepts to non-technical people</li>
                           <li>Created detailed and clear documentation</li>
