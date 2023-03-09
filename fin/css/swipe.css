@@ -26103,8 +26103,12 @@ a {
   padding: 100; }
 
 .contact-page {
+  margin-top: 15%;
   padding: 10px;
-  justify-content: center; }
+  width: 45%;
+  min-width: 200px; }
+  .contact-page input {
+    width: 70%; }
 
 form {
   background: #fff;

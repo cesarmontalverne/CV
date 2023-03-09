@@ -58,9 +58,10 @@ class ReactExperience extends React.Component {
                   <div className="">
                       <p className="test2 white">Cortina<br></br><a>Jun 2022 - Nov 2022</a></p>
                       <ul className="test3 white">
-                          <li>Researched and documented other system's APIs for integration purposes</li>
-                          <li>Created diagrams that specified how to integrate to a particular system, in a high level</li>
-                          <li>Wrote market research papers</li>
+                          <li>Researched and documented 6 other system’s APIs for integration purposes</li>
+                          <li>Diagrammed an integration solution for 2 systems</li>
+                          <li>Delivered 2 market research papers</li>
+                          <li> Presented integration solution to clients alongside other teammates.</li>
                           <li><a target ="_blank" href="https://www.cortinaplatform.com/">Learn About The Company</a></li>
                       </ul>
                   </div>

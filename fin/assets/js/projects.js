@@ -54,9 +54,10 @@ class ReactProjects extends React.Component {
                     <div className="">
                         <p className="test2 white">Hoosville<br></br><a>Sep 2021 - present</a></p>
                         <ul className="test3 white">
-                            <li>Planned and developed IOS and Android App with the UVA Psychology department.</li>
-                            <li>The research aims at gaining insight about how income and propensity to move influence people's friend-making strategy.</li>
-                            <li>The app tries to mimic the world. You need to befriend people while events happen to you.</li>
+                            <li>Planned and developed IOS and Android App with the UVA Psychology department</li>
+                            <li>The research aims at gaining insight about how income and propensity to move influence people's friend-making strategy</li>
+                            <li>The app tries to mimic the world. You need to befriend people while events happen to you</li>
+                            <li><a target="_blank" href="projects.html#hoosville">Documentation</a></li>
                             <li><a target="_blank" href="projects.html#hoosville">Learn More</a></li>
                         </ul>
                     </div>
@@ -67,10 +68,11 @@ class ReactProjects extends React.Component {
                     <div>
                         <p className="test2 white">Project Hunt<br></br><a>2021</a></p>
                         <ul className="test3 white">
-                        <li>Built a Relational Database schema for a sample web app.</li>
-                          <li>Developed full stack application using React and MySQL, and deployed it with AWS.</li>
-                          <li><a target ="_blank" href="projects.html#projecthunt">Learn More</a></li>
-                            
+                            <li>Collaborated with 3 team members to build an application with a React frontend and an express backend</li>
+                            <li>Cooperated with a team to plan a database schema from scratch</li>
+                            <li>The express server interfaces between the frontend and a MySQl database served with AWS</li>
+                            <li><a target ="_blank" href="https://docs.google.com/document/d/1pzIxhDfYzAXhdFl3uFfdbBwz0ZIFEwIRi-C4UIe8PNs/edit?usp=sharing">See Database Report</a></li>
+                            <li><a target ="_blank" href="http://ec2-18-221-87-115.us-east-2.compute.amazonaws.com/">See Demo</a></li>
                         </ul>
                     </div>
                 )

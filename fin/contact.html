@@ -98,7 +98,8 @@
 
         <div class="container">
             <section class="section-padding contact-background">
-                <form class="contact-page" onsubmit="sendEmail(); reset(); return false;">
+                <div style="display:flex;align-items:center;justify-content: center;">
+<form class="contact-page" onsubmit="sendEmail(); reset(); return false;">
     <h3>Contact Me</h3>
     <input type="email" id="email" placeholder="Email*"></input>
     <input type="text" id="linkedin" placeholder="LinkedIn*"></input>
@@ -106,8 +107,11 @@
     <input type="job-listing" id="job-listing" placeholder="Job Listing URL(optional)"></input>
     <input class="larger-text" type="details" id="details" placeholder="Details(optional)"></input>
     <button type="submit">Send</button>
+</form>
+</div>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
+    
 function sendEmail() {
     return new Promise((resolve, reject)=>{
         if(document.getElementById("linkedin").value!=="" && document.getElementById("email").value!==""){
