@@ -57,7 +57,7 @@ class ReactProjects extends React.Component {
                             <li>Planned and developed IOS and Android App with the UVA Psychology department</li>
                             <li>The research aims at gaining insight about how income and propensity to move influence people's friend-making strategy</li>
                             <li>The app tries to mimic the world. You need to befriend people while events happen to you</li>
-                            <li><a target="_blank" href="projects.html#hoosville">Documentation</a></li>
+                            <li><a target="_blank" href="https://miro.com/app/board/uXjVOih689g=/?share_link_id=274331576221">Documentation</a></li>
                             <li><a target="_blank" href="projects.html#hoosville">Learn More</a></li>
                         </ul>
                     </div>
