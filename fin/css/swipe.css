@@ -25437,27 +25437,63 @@ blockquote {
   margin-top: 60px;
   margin-bottom: 20px; }
 
-.test3 {
-  text-align: justify; }
-  .test3 li {
-    list-style: "\00BB";
-    padding-left: 5px;
-    padding-bottom: 5px;
-    font-size: 15px; }
-    .test3 li a {
-      color: #FF8000; }
-
 .test2 {
-  text-align: center; }
-  .test2 a {
-    font-size: 10px; }
+  text-align: left; }
+
+.test3 li {
+  width: 100%;
+  list-style: "\00BB";
+  padding-left: 5px;
+  padding-bottom: 5px;
+  font-size: 15px; }
+  .test3 li a {
+    color: #FF8000; }
+
+.toggle-label {
+  cursor: pointer;
+  text-decoration: underline;
+  margin: 0;
+  /* Removes default margin of ul */
+  padding: 0;
+  /* Removes default padding of ul */ }
+
+.toggle-input {
+  display: none; }
+
+.dropdown-content {
+  display: none; }
+
+.toggle-input:checked + .toggle-label + .dropdown-content {
+  display: block; }
+
+.toggle-label {
+  cursor: pointer;
+  text-decoration: underline;
+  /* As previously set */
+  transition: background-color 0.3s, color 0.3s;
+  /* Smooth transition effect for hover styles */
+  border-radius: 4px;
+  /* Slight rounded edges for aesthetics */
+  display: inline-block;
+  /* So that padding and other box properties apply correctly */ }
+
+.toggle-label:hover {
+  background-color: #ffffff;
+  /* Slight grey background on hover */
+  color: #FF8000;
+  /* Darker text color on hover */ }
+
+.toggle-input:checked + .toggle-label::before {
+  transform: rotate(90deg);
+  /* Rotate the arrow when the content is expanded */ }
 
 .test {
-  height: 100%;
-  width: 100%;
   display: flex;
-  justify-content: flex-start;
-  text-align: start; }
+  flex-direction: column;
+  align-items: left; }
+
+.white {
+  color: white; }
 
 .dates {
   font-size: 10px;
@@ -25606,17 +25642,26 @@ a {
       .profile .contact-info {
         margin-top: 50px; } }
   .profile .list-titles {
+    margin: 0;
+    padding: 0;
     float: left;
     text-align: left;
     font-weight: "bold";
     color: #4a4e51;
     list-style-type: none; }
   .profile .list-content {
+    margin-left: 10px;
+    padding: 0;
+    list-style-type: none;
     float: left;
     width: 60%;
     text-align: left;
-    font-weight: 300;
-    list-style-type: none; }
+    list-style-type: none;
+    font-size: 10px; }
+  @media (max-width: 450px) {
+    .profile .list-content li {
+      font-size: 14px;
+      padding: 1px; } }
   .profile .contact-presentation {
     text-align: left;
     font-weight: 300;
@@ -25684,13 +25729,13 @@ a {
     margin-bottom: 15px; }
 
 .section-padding {
-  padding: 80px 60px 40px 40px; }
+  padding: 20px 60px 40px 40px; }
   @media (max-width: 850px) {
     .section-padding {
-      padding: 80px 15% 40px 10%; } }
+      padding: 20px 5% 40px 5%; } }
   @media (max-width: 450px) {
     .section-padding {
-      padding: 40px 10% 20px 5%; } }
+      padding: 40px 5% 20px 5%; } }
 
 .full-size {
   width: 100%; }

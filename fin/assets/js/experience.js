@@ -41,48 +41,90 @@ class ReactExperience extends React.Component {
     </div>
   }
   contentSelector = function(sel){
+              
       switch (sel) {
         default:
             return(
-                <div className="">
-                      <p className="test2 white">Research Assistant<br></br><a>Jun 2023 - present</a></p>
-                      <ul className="test3 white">
-                          <li>Oversaw the entire operations in Tennessee, including sales and contract negotiations, consistently dedicating 12+
-hour workdays and, at times, working over the weekend </li>
-                          <li>Leveraged Python and SQL for systematic worker-job matching, optimizing workforce placement</li>
-                          <li>Utilized Python Web Scraping and ChatGPT to discover and qualify over 1000 leads</li>
-                          <li>Integrated Salesforce with Dialpad, Chrome, and Google Sheets to optimize lead qualification and traveled to 4
-markets for in-person sales</li>
-                          <li><a target ="_blank" href="https://www.traba.work">Learn About The Company</a></li>
+                <div class="test">
+                      <p class="test2 white">Territory Operations at Tennessee</p>
+                      <ul class="test3 white">
+                          <li>
+                              <input type="checkbox" id="info1" class="toggle-input" />
+                              <label for="info1" class="toggle-label">Managed Operations</label>
+                              <div class="dropdown-content">Oversaw the entire operations in Tennessee, from sales and contract negotiations to recruiting and vetting, consistently dedicating 12+
+hour workdays and, at times, working over the weekend.</div>
+                          </li>
+                          <li>
+                              <input type="checkbox" id="info2" class="toggle-input" />
+                              <label for="info2" class="toggle-label">Analyzed Data</label>
+                              <div class="dropdown-content">Extracted data from internal database using SQL and used it to optimize worker placements.</div>
+                          </li>
+                          <li>
+                              <input type="checkbox" id="info3" class="toggle-input" />
+                              <label for="info3" class="toggle-label">Analytical Market Research</label>
+                              <div class="dropdown-content">Acquired data through public data sets or scraping to analyze and make data-oriented decisions on sales strategy using Python.</div>
+                          </li>
+                          <li><a href="https://www.traba.work/">Learn About The Company</a></li>
                       </ul>
                   </div>
             )
           case 1:
               return (
-                  <div className="">
-                      <p className="test2 white">Research Assistant<br></br><a>Sep 2021 - May 2023</a></p>
-                      <ul className="test3 white">
-                          <li>Planned and developed IOS and Android App with the UVA Psychology department </li>
-                          <li>Integrated Qualtrics, google sheets and firebase with APIs or a web view </li>
-                          <li>Explained technical concepts to non-technical people</li>
-                          <li>Created detailed and clear documentation</li>
-                          <li><a target ="_blank" href="projects.html#hoosville">Learn About The Project</a></li>
-                      </ul>
-                  </div>
-
+                <div class="test">
+                <p class="test2 white">Research Assistant at University of Virginia</p>
+                <ul class="test3 white">
+                    <li>
+                        <input type="checkbox" id="info1" class="toggle-input" />
+                        <label for="info1" class="toggle-label">UI Design</label>
+                        <div class="dropdown-content">Engineered an interactive digital environment using JavaScript, Expo, and React Native, enabling the research.
+.</div>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="info2" class="toggle-input" />
+                        <label for="info2" class="toggle-label">User Friendliness</label>
+                        <div class="dropdown-content">Connected Google Sheets API, granting non-programmer researchers intuitive control over all 15 app parameters.</div>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="info3" class="toggle-input" />
+                        <label for="info3" class="toggle-label">Integration</label>
+                        <div class="dropdown-content">Integrated a Qualtrics web view for candidate data collection and Firebase API for game data recording.</div>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="info4" class="toggle-input" />
+                        <label for="info4" class="toggle-label">Organized</label>
+                        <div class="dropdown-content">Maintained a secure GitHub repository, meticulously managing API keys and creating comprehensive
+documentation to ensure the app’s sustainability post-departure.</div>
+                    </li>
+                    <li><a href="projects.html#hoosville">Learn About The Project</a></li>
+                </ul>
+            </div>
               )
           case 2:
               return (
-                  <div className="">
-                      <p className="test2 white">Cortina<br></br><a>Jun 2022 - Nov 2022</a></p>
-                      <ul className="test3 white">
-                          <li>Researched and documented 6 other system’s APIs for integration purposes</li>
-                          <li>Diagrammed an integration solution for 2 systems</li>
-                          <li>Delivered 2 market research papers</li>
-                          <li> Presented integration solution to clients alongside other teammates.</li>
-                          <li><a target ="_blank" href="https://www.cortinaplatform.com/">Learn About The Company</a></li>
+                  <div class="test">
+                      <p class="test2 white">Cortina</p>
+                      <ul class="test3 white">
+                          <li>
+                              <input type="checkbox" id="info1" class="toggle-input" />
+                              <label for="info1" class="toggle-label">Researched REST APIs </label>
+                              <div class="dropdown-content">Conducted in-depth research on 5 distinct API architectures, mapping them to Cortina’s system for integraions.</div>
+                          </li>
+                          <li>
+                              <input type="checkbox" id="info2" class="toggle-input" />
+                              <label for="info2" class="toggle-label">Diagrammed Solutions</label>
+                              <div class="dropdown-content">Documented detailed data integration schematics tailored to distinct use cases, considering system
+                                  limitations and ensuring coders maintained a primary focus on programming.</div>
+                          </li>
+                          <li>
+                              <input type="checkbox" id="info3" class="toggle-input" />
+                              <label for="info3" class="toggle-label">Technical Market Research</label>
+                              <div class="dropdown-content">Evaluated 8 inverse logistics systems, ensuring the selection of the most suitable contenders for integration based
+                                  on their system nuances.</div>
+                          </li>
+                          <li><a href="https://www.cortinaplatform.com/">Learn About The Company</a></li>
                       </ul>
                   </div>
+
               )
 
       }
